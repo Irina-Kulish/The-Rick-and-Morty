@@ -61,72 +61,54 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, character }) => {
             className="md:ml-4 text-left text-gray-300"
           >
             <p>
-              <strong>
-                Status: 
-              </strong> 
+              <strong>Status: </strong> 
               {character.status}
             </p>
             <p>
-              <strong>
-                Species: 
-              </strong> 
+              <strong>Species: </strong> 
               {character.species}
             </p>
             <p>
-              <strong>
-                Gender: 
-              </strong> 
+              <strong>Gender: </strong> 
               {character.gender}
             </p>
             <p>
-              <strong>
-                Type: 
-              </strong> 
+              <strong>Type: </strong> 
               {locationDetails 
                 ? locationDetails.type 
                 : <Loading />
               }
             </p>
             <p>
-              <strong>
-                Dimension: 
-              </strong> 
+              <strong>Dimension: </strong> 
               {locationDetails 
                 ? locationDetails.dimension 
                 : <Loading />
               }
             </p>
             <p>
-              <strong>
-                Last known location: 
-              </strong> 
+              <strong>Last known location: </strong> 
               {locationDetails 
                 ? locationDetails.name 
                 : <Loading />
               }
             </p>
             <p>
-              <strong>
-                First seen in episode: 
-              </strong> 
+              <strong>First seen in episode: </strong> 
                 {firstEpisode 
                   ? firstEpisode.name 
                   : <Loading />
                 }
             </p>
             <p>
-              <strong>
-                Air date: 
-              </strong> 
+              <strong>Air date: </strong> 
               {firstEpisode 
                 ? firstEpisode.air_date 
                 : <Loading />
               }
             </p>
             <p>
-              <strong>
-                Number of Episodes: 
-              </strong> 
+              <strong>Number of Episodes: </strong> 
               {character.episode.length}
             </p>
           </div>
